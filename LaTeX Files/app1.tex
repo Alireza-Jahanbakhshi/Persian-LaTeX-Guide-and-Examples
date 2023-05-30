@@ -1,0 +1,34 @@
+% Appendix 1
+\chapter{تبدیل دوخطی}
+
+یکی از روش‌های گسسته‌سازی یک سیستم زمان‌پیوسته روش تبدیل دوخطی است. این روش که به روش توستین\LTRfootnote{Tustin} نیز معروف است، یک روش انتگرال‌گیری عددی به کمک تقریب ذوزنقه‌ای است. سیستمی با ورودی $u(t)$، خروجی $y(t)$ و تابع تبدیل $\dfrac{1}{s}$ در نظر بگیرید. رابطه
+\begin{equation}
+y(t)=\int_{-\infty}^{t}{u(\tau)} d \tau 
+\label{eq2-19}
+\end{equation}
+بین ورودی و خروجی سیستم برقرار است. با گسسته‌سازی \ref{eq2-19} به رابطه
+\begin{equation}
+y[(k+1)h]=y(kh)+\int_{kh}^{(k+1)h}{u(\tau)} d \tau 
+\label{eq2-20}
+\end{equation}
+می‌رسیم. اگر از تقریب ذوزنقه‌ای برای محاسبه انتگرال استفاده کنیم، \ref{eq2-20} به صورت 
+\begin{equation}
+y[(k+1)h] \simeq y(kh)+\dfrac{h}{2}\left(u(kh)+u[(k+1)h]\right)
+\label{eq2-21}
+\end{equation}
+در می‌آید. از رابطه تقریبی \ref{eq2-21} می‌توان برای تبدیل یک سیستم زمان‌پیوسته به یک سیستم زمان‌گسسته استفاده کرد.
+
+سیستم زمان‌پیوسته خطی و تغییرناپذیر با زمان $G=(A,B,C,D)$  را در نظر بگیرید. اگر این سیستم را با دوره تناوب $h$ گسسته‌سازی کنیم، مدل فضای حالت $G_d=(A_d,B_d,C_d,D_d)$ به دست می‌آید که در آن
+\begin{equation*}
+A_{d}=(I-\dfrac{h}{2}A)^{-1}(I+\dfrac{h}{2}A) 
+\end{equation*} 
+ \begin{equation*}
+B_{d}=\dfrac{h}{2}(I-\dfrac{h}{2}A)^{-1}B) 
+\end{equation*} 
+  \begin{equation*}
+C_{d}=C(I+A_{d}) 
+\end{equation*} 
+  \begin{equation*}
+D_{d}=D+CB_{d} 
+\end{equation*} 
+ است.

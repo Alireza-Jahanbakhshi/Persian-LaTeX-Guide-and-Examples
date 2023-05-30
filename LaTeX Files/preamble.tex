@@ -1,0 +1,70 @@
+%*************************************************
+% All the packages and definitions required for this 
+% project are included here.
+%*************************************************
+% Alireza Jahanbakhshi, 1402
+% Dept. of Electrical and Computer Engineering, SKU
+%*************************************************
+
+
+\usepackage{amsthm,amssymb,amsmath}			% Writing math
+\usepackage{epsf,graphicx}									% Including graphics
+\usepackage[a4paper]{geometry}							% Fixing page layout and margins
+\usepackage{titlesec}											% Change chapter and section titles
+\usepackage{setspace}											% Change line spacing
+\usepackage[stable,bottom]{footmisc}					% Move footnotes to the bottom of page
+
+\usepackage{zref-perpage}
+\zmakeperpage[1]{footnote}
+
+\usepackage{xepersian}										% Persian
+\settextfont{XB Zar}												% Persian font
+
+
+% Use English digits in equations
+\DefaultMathsDigits
+
+% Default footnotes from left to right
+\setfootnoteLR
+
+% Use English numbers for English footnotes
+\makeatletter
+\def\@makeLTRfnmark{\hbox{\@textsuperscript{\latinfont\@thefnmark}}}
+\renewcommand\@makefntext[1]{%
+    \parindent 1em%
+    \noindent
+    \hb@xt@1.8em{\hss\if@RTL\@makefnmark\else\@makeLTRfnmark\fi}#1}
+\makeatother
+
+% Use dash instead of dot in section numbers
+\SepMark{-}										
+
+
+% Change fonts and margins of section and subsection titles
+% For chapters please see firstpages.tex
+\titlespacing*{\section}{0pt}{1cm}{0.2cm}
+\titleformat{\section}
+  {\fontsize{12}{6}\scshape\bfseries}{\thesection}{1em}{}
+
+\titlespacing*{\subsection}{0pt}{.8cm}{0cm}
+\titleformat{\subsection}
+  {\fontsize{11}{6}\scshape\bfseries}{\thesubsection}{1em}{}
+  
+% Fix table of contents for chapters
+\makeatletter 
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+     \refstepcounter{chapter}%
+     \typeout{\@chapapp\space\thechapter.}%
+     \addcontentsline{toc}{chapter}%
+       	{\@chapapp~\protect\numberline{\tartibi{chapter}\,:\space #1}}
+  \else
+  	 \addcontentsline{toc}{chapter}{#1}%
+  \fi
+  \chaptermark{#1}%
+  \addtocontents{lof}{\protect\addvspace{10\p@}}%
+  \addtocontents{lot}{\protect\addvspace{10\p@}}%
+  \@makechapterhead{#2}%
+  \@afterheading}
+  \let\stdl@chapter\l@chapter
+ \renewcommand*{\l@chapter}[2]{\stdl@chapter{{#1}}{}}
+\makeatother

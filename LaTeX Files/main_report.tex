@@ -1,0 +1,43 @@
+%*************************************************
+% A template for MSc seminar report. 
+% Please see "guideline.pdf" first.
+%*************************************************
+% Alireza Jahanbakhshi, 1402
+% Dept. of Electrical and Computer Engineering, SKU
+%*************************************************
+% !TEX TS-program = xelatex
+\documentclass[a4paper,fleqn]{report} 
+
+% All the packages and general definitions are included in this file: preamble.tex
+\include{preamble}							
+
+\begin{document}
+
+% The first pages (before abstract) are included in this file: firstpages.tex
+\include{firstpages}							
+
+% The abstract of the paper goes here: abstract.tex
+\include{abstract}								
+
+%*****************************************************************
+%% تنظیم مناسب صفحه و فونت برای متن اصلی پایان‌نامه
+\newgeometry{left=2.5cm,right=3cm,top=3cm,bottom=2.5cm,includehead=false,headsep=1cm,footnotesep=.5cm}
+\settextfont{XB Zar}\fontsize{12}{6}\selectfont
+\setlatintextfont{Times New Roman}\fontsize{11}{6}
+\baselineskip=.9cm
+
+% Moving page number to top right
+\pagestyle{myheadings}
+%*****************************************************************
+
+% Main chapters
+\include{chap1}
+\include{chap2}
+
+% Appendices
+\appendix
+\include{app1}
+
+\include{references}
+
+\end{document}
