@@ -4,6 +4,7 @@
     "customizations": {
         "vscode": {
             "extensions": ["james-yu.latex-workshop"]
+            // trouble installing extension? => https://stackoverflow.com/questions/66134532/vscode-marketplace-extension-corrupt-zip-end-of-central-directory-record-signa
         }
     }
 }
