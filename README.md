@@ -8,6 +8,7 @@ This repository provides a comprehensive guide and examples for using LaTeX with
 - [Getting Started](#getting-started)
 - [Persian Font Support](#persian-font-support)
 - [Examples](#examples)
+- [Docker](#docker)
 - [Contributing](#contributing)
 
 ## Introduction

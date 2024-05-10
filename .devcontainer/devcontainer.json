@@ -1,6 +1,6 @@
 {
-    "name": "TeX Live Persian",
-    "dockerFile": "../Dockerfile",
+    "name": "TexLive Persian",
+    "dockerFile": "Dockerfile",
     "customizations": {
         "vscode": {
             "extensions": ["james-yu.latex-workshop"]

@@ -1,4 +1,7 @@
 {
     "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
-    "latex-workshop.latex.outDir": "%DIR%/out" 
+    "latex-workshop.latex.outDir": "%DIR%/out", 
+    // "latex-workshop.latex.outDir": "./out",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab"
 }
