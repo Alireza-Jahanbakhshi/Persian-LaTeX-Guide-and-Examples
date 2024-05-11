@@ -29,6 +29,7 @@ The "LaTeX Files" directory contains a variety of LaTeX files showcasing differe
 
 ## Docker
 Open this repo in Visual Studio Code and click on "Reopen in container". This will build a docker image for LaTeX and open this repo in the container. LaTeX, fonts and "Latex Workshop" Extension for Visual Studio Code will be automatically installd So you can start building your persian documents right away without dealing with compiler or editor. Just open your .tex file in Visual Studio Code and click the green button at top right of the page.
+You can copy .devcontainer to your own latex directory to compile ypur files.
 
 ## Contributing
 
