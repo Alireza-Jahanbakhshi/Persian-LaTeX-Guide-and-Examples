@@ -8,6 +8,7 @@ This repository provides a comprehensive guide and examples for using LaTeX with
 - [Getting Started](#getting-started)
 - [Persian Font Support](#persian-font-support)
 - [Examples](#examples)
+- [Docker](#docker)
 - [Contributing](#contributing)
 
 ## Introduction
@@ -25,6 +26,11 @@ In order to typeset Persian text in LaTeX, it's important to have proper font su
 ## Examples
 
 The "LaTeX Files" directory contains a variety of LaTeX files showcasing different typesetting techniques and document structures. Feel free to explore these examples to gain a better understanding of how to use LaTeX for Persian documents.
+
+## Docker
+Open this repo in Visual Studio Code and click on "Reopen in container". This will build a docker image for LaTeX and open this repo in the container. LaTeX, fonts and "Latex Workshop" Extension for Visual Studio Code will be automatically installd So you can start building your persian documents right away without dealing with compiler or editor. Just open your .tex file in Visual Studio Code and click the green button at top right of the page.
+You can copy .devcontainer to your own latex directory to compile ypur files.
+
 ## Contributing
 
 Contributions are welcome! If you have any improvements, suggestions, or additional examples to contribute, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.

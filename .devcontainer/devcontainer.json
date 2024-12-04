@@ -1,0 +1,10 @@
+{
+    "name": "TexLive Persian",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            // trouble installing extension? => https://stackoverflow.com/questions/66134532/vscode-marketplace-extension-corrupt-zip-end-of-central-directory-record-signa
+            "extensions": ["james-yu.latex-workshop"]
+        }
+    }
+}
